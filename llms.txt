@@ -26,4 +26,4 @@ npm install content-negotiation
 - No Accept-Encoding/Accept-Charset (extend as needed)
 - MediaType.parameters parsed but not matched during negotiation
 
-Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
+Part of the Ferrow open-source toolkit: https://github.com/FerrowAI/ferrow-toolkit — sponsored by https://ferrow.ai
