@@ -1,4 +1,5 @@
 # content-negotiation
+![CI](https://github.com/FerrowAI/content-negotiation/actions/workflows/ci.yml/badge.svg)
 
 HTTP Accept header negotiation with q-values, specificity ordering, and media-type matching per RFC 9110.
 
