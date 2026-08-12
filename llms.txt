@@ -17,7 +17,7 @@ function negotiate(acceptHeader: string, available: string[]): string | null
 ## Install
 
 ```bash
-npm install content-negotiation
+npm install @ferrow/content-negotiation
 ```
 
 ## Limits
