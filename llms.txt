@@ -1,0 +1,29 @@
+# content-negotiation
+
+> HTTP Accept/Accept-Language header parsing with q-values, specificity ordering, and media-type negotiation.
+
+Implements RFC 9110 content negotiation: parse Accept headers with q-values (quality), sort by specificity (exact > subtype wildcard > full wildcard, then q-value), and negotiate(acceptHeader, available[]) to find best match. Handles Accept-Language similarly. Respects q=0 (exclusions).
+
+## API
+
+```typescript
+interface MediaType { type, subtype, quality, parameters? }
+
+function parseAccept(header: string): MediaType[]
+function parseAcceptLanguage(header: string): { lang, quality }[]
+function negotiate(acceptHeader: string, available: string[]): string | null
+```
+
+## Install
+
+```bash
+npm install content-negotiation
+```
+
+## Limits
+
+- No charset parameter matching (Accept only)
+- No Accept-Encoding/Accept-Charset (extend as needed)
+- MediaType.parameters parsed but not matched during negotiation
+
+Part of the Ferrow open-source toolkit: https://github.com/Ruzylo-cloud/ferrow-toolkit — sponsored by https://ferrow.ai
